@@ -5,12 +5,11 @@ deck = []
 suits.each do |suit|
    	nums.each do |num|
     	deck << "#{num} of #{suit}"
-end
 
 class Hash
 	def shuffle
 		Hash [self.deck(self.length)]
-end
+
 	def shufffle!
 		self.replace(self.shufffle)
 	end
